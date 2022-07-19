@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:padding="25dp"
+
+    android:background="@color/black_shade_2">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="25dp"
+        >
+        <TextView
+            android:id="@+id/idst_name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:minHeight="48dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="Student Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/idMathsMark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idst_name"
+                android:minHeight="48dp"
+                android:padding="20dp"
+                android:text="Maths Mark"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/idScienceMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idMathsMark"
+                android:minHeight="48dp"
+                android:padding="20dp"
+                android:text="Science Mark"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/idEnglishMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idScienceMarks"
+                android:minHeight="48dp"
+                android:padding="20dp"
+                android:text="English Mark"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/goback"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEnglishMarks"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="80dp"
+                android:text="Go Back"
+                app:cornerRadius="25dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout
+  >
